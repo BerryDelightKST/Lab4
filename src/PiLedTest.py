@@ -12,10 +12,11 @@ def LedBlinker():
         led.set_output(led,False)
         sleep(0.2)
     else:
-        led.set_output(led,True)
-        sleep(0.1)
-        led.set_output(led,False)
-        sleep(0.1)
+        for x in range (50):
+            led.set_output(led,True)
+            sleep(0.1)
+            led.set_output(led,False)
+            sleep(0.1)
         
 
 while True:
